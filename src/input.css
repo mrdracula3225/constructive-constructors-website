@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-construction-blue hover:bg-construction-blue/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-construction-blue;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-construction-blue bg-construction-yellow hover:bg-construction-yellow/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-construction-yellow;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold text-construction-blue sm:text-4xl;
+  }
+  
+  .section-subtitle {
+    @apply mt-3 text-lg text-gray-500 sm:mt-4;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden;
+  }
+  
+  .form-input {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-construction-blue focus:ring-construction-blue;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm;
+  }
+  
+  .cta-button {
+    @apply inline-block bg-construction-yellow text-construction-blue font-bold py-3 px-8 rounded-lg;
+  }
+  
+  .cta-button:hover {
+    @apply bg-yellow-400;
+  }
+} 

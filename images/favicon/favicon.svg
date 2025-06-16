@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="32" height="32" rx="4" fill="#1a365d"/>
+    <!-- Building -->
+    <path d="M8 24V12L16 8L24 12V24H8Z" fill="#f6ad55"/>
+    <!-- Windows -->
+    <rect x="11" y="14" width="3" height="3" fill="#1a365d"/>
+    <rect x="18" y="14" width="3" height="3" fill="#1a365d"/>
+    <rect x="11" y="19" width="3" height="3" fill="#1a365d"/>
+    <rect x="18" y="19" width="3" height="3" fill="#1a365d"/>
+</svg> 

@@ -1,0 +1,363 @@
+/* Custom styles beyond Tailwind */
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Custom utility classes */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom component styles */
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+/* Base styles with WCAG 2.0 compliant colors */
+:root {
+    --construction-blue: #1a365d;    /* WCAG AA compliant with white text */
+    --construction-yellow: #f6ad55;  /* WCAG AA compliant with dark text */
+    --construction-dark: #0f2942;    /* Darker blue for better contrast */
+    --construction-light: #f8fafc;   /* Light background */
+    --text-primary: #1a202c;         /* Dark text for light backgrounds */
+    --text-secondary: #4a5568;       /* Secondary text color */
+    --text-light: #ffffff;           /* Light text for dark backgrounds */
+}
+
+/* Dark mode transitions */
+html {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark mode specific styles */
+.dark {
+    color-scheme: dark;
+}
+
+.dark body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* Text colors with proper contrast */
+.text-primary {
+    color: var(--text-primary);
+}
+
+.dark .text-primary {
+    color: var(--dark-text);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.dark .text-secondary {
+    color: var(--dark-text-secondary);
+}
+
+/* Background colors with proper contrast */
+.bg-primary {
+    background-color: var(--construction-blue);
+}
+
+.bg-secondary {
+    background-color: var(--construction-yellow);
+}
+
+.bg-light {
+    background-color: var(--construction-light);
+}
+
+.dark .bg-light {
+    background-color: var(--dark-bg);
+}
+
+/* Form elements with proper contrast */
+.form-input {
+    color: var(--text-primary);
+    background-color: var(--construction-light);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.dark .form-input {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-text-secondary);
+    color: var(--dark-text);
+}
+
+.form-label {
+    color: var(--text-primary);
+    transition: color 0.3s ease-in-out;
+}
+
+.dark .form-label {
+    color: var(--dark-text);
+}
+
+/* Button styles with proper contrast */
+.btn-primary {
+    background-color: var(--construction-blue);
+    color: var(--text-light);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--construction-dark);
+}
+
+.btn-secondary {
+    background-color: var(--construction-yellow);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #f59e0b;
+}
+
+/* Navigation styles with proper contrast */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    color: var(--text-primary);
+}
+
+.dark .nav-link {
+    color: var(--dark-text-secondary);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--construction-blue);
+}
+
+.dark .nav-link:hover,
+.dark .nav-link:focus {
+    color: var(--dark-text);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--construction-yellow);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.text-construction-blue::after,
+.dark .nav-link.text-dark-text::after {
+    width: 100%;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust based on your header height */
+}
+
+/* Section transitions */
+section {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Active section highlighting */
+section:target {
+    scroll-margin-top: 80px; /* Adjust based on your header height */
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Card styles */
+.card {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dark .card {
+    background-color: var(--dark-surface);
+}
+
+/* Focus styles for better accessibility */
+:focus {
+    outline: 2px solid var(--construction-blue);
+    outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--construction-blue);
+    outline-offset: 2px;
+}
+
+/* Skip link styles */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--construction-blue);
+    color: var(--text-light);
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* CTA Button styles */
+.cta-button {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Service card hover effects */
+.service-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image hover effects */
+.hover-zoom {
+    transition: transform 0.5s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Social media icon hover effects */
+.social-icon {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: var(--construction-yellow);
+}
+
+/* Loading animation for images */
+.image-loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Header transition */
+#main-header {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+    transition: transform 0.3s ease-in-out;
+} 
