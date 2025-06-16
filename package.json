@@ -1,19 +1,39 @@
 {
   "name": "constructive-constructors",
   "version": "1.0.0",
-  "description": "Construction company website",
+  "description": "A modern construction company website",
+  "main": "src/components/index.html",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "optimize-images": "node scripts/optimize-images.js"
+    "dev": "node scripts/dev-server.js",
+    "build": "node scripts/build.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "lint": "eslint src/scripts/**/*.js",
+    "format": "prettier --write \"src/**/*.{js,html,css}\"",
+    "start": "serve dist"
+  },
+  "keywords": [
+    "construction",
+    "website",
+    "tailwindcss"
+  ],
+  "author": "Constructive Constructors",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "chokidar": "^3.5.3",
+    "eslint": "^8.40.0",
+    "fs-extra": "^11.1.1",
     "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2",
-    "@tailwindcss/forms": "^0.5.4",
-    "@tailwindcss/typography": "^0.5.9",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "sharp": "^0.32.1"
+    "prettier": "^2.8.8",
+    "serve": "^14.2.1",
+    "sharp": "^0.32.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 } 

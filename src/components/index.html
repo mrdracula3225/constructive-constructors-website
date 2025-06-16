@@ -47,85 +47,42 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Constructive Constructors",
-        "image": "https://constructiveconstructors.com/images/logo.jpg",
-        "description": "Constructive Constructors builds durable homes, offices, and dreams. Contact us for residential, commercial, and renovation services.",
-        "url": "https://constructiveconstructors.com",
-        "telephone": "+1-123-456-7890",
-        "priceRange": "$$",
+        "image": "images/logo.png",
+        "description": "Your trusted partner in construction excellence",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "123 Construction Avenue",
-            "addressLocality": "Building District",
-            "addressRegion": "CA",
-            "postalCode": "90210",
-            "addressCountry": "US"
+            "streetAddress": "MIG - 81, Mushk Mahal, Huda Colony, Attapur",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "postalCode": "500048",
+            "addressCountry": "IN"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "34.0522",
-            "longitude": "-118.2437"
+            "latitude": "17.3850",
+            "longitude": "78.4867"
         },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                ],
-                "opens": "08:00",
-                "closes": "18:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "14:00"
-            }
-        ],
+        "url": "https://constructiveconstructors.com",
+        "telephone": "+919160570643",
+        "email": "constructiveconstructors@gmail.com",
+        "priceRange": "₹₹",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
         "sameAs": [
             "https://www.facebook.com/constructiveconstructors",
-            "https://www.linkedin.com/company/constructiveconstructors",
-            "https://www.instagram.com/constructiveconstructors"
-        ],
-        "areaServed": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "34.0522",
-                "longitude": "-118.2437"
-            },
-            "geoRadius": "50000"
-        },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Construction Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Residential Construction"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Commercial Construction"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Renovation Services"
-                    }
-                }
-            ]
-        }
+            "https://www.instagram.com/constructiveconstructors",
+            "https://www.linkedin.com/company/constructiveconstructors"
+        ]
     }
     </script>
     
@@ -187,11 +144,12 @@
                 Constructive Constructors
             </a>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#services" class="nav-link text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="View our services">Services</a>
-                <a href="#projects" class="nav-link text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="View our projects">Projects</a>
-                <a href="#about" class="nav-link text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="Learn about us">About</a>
-                <a href="#contact" class="nav-link text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="Contact us">Contact</a>
-                <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-surface transition-colors" aria-label="Toggle dark mode">
+                <a href="index.html" class="nav-link text-construction-blue dark:text-dark-accent">Home</a>
+                <a href="pages/about.html" class="nav-link text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">About</a>
+                <a href="pages/services.html" class="nav-link text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">Services</a>
+                <a href="pages/projects.html" class="nav-link text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">Projects</a>
+                <a href="pages/contact.html" class="nav-link text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">Contact</a>
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-dark-surface-hover" aria-label="Toggle dark mode">
                     <svg class="w-6 h-6 text-gray-700 dark:text-dark-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path class="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
                         <path class="moon-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
@@ -207,20 +165,19 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-sm z-40 transform translate-x-full transition-transform duration-300 dark:bg-dark-bg/95">
-        <div class="container mx-auto px-4 py-8">
-            <div class="flex flex-col space-y-6">
-                <a href="#services" class="text-xl text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="View our services">Services</a>
-                <a href="#projects" class="text-xl text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="View our projects">Projects</a>
-                <a href="#about" class="text-xl text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="Learn about us">About</a>
-                <a href="#contact" class="text-xl text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="Contact us">Contact</a>
-                <button id="mobileDarkModeToggle" class="flex items-center space-x-2 text-xl text-gray-700 hover:text-construction-blue dark:text-dark-text-secondary dark:hover:text-dark-text" aria-label="Toggle dark mode">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path class="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        <path class="moon-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                    </svg>
-                    <span>Toggle Dark Mode</span>
-                </button>
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-white dark:bg-dark-surface transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-4">
+            <button id="close-menu" class="absolute top-4 right-4 p-2 rounded-lg bg-gray-100 dark:bg-dark-surface-hover" aria-label="Close menu">
+                <svg class="w-6 h-6 text-gray-600 dark:text-dark-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="mt-8 space-y-4">
+                <a href="index.html" class="block text-construction-blue dark:text-dark-accent">Home</a>
+                <a href="pages/about.html" class="block text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">About</a>
+                <a href="pages/services.html" class="block text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">Services</a>
+                <a href="pages/projects.html" class="block text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">Projects</a>
+                <a href="pages/contact.html" class="block text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent">Contact</a>
             </div>
         </div>
     </div>
@@ -295,73 +252,93 @@
             </section>
 
             <!-- Projects Section -->
-            <section id="projects" class="py-20 bg-white dark:bg-dark-surface">
+            <section id="projects" class="py-20 bg-gray-50 dark:bg-dark-surface">
                 <div class="container mx-auto px-4">
-                    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-dark-text">Featured Projects</h2>
-                    <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-construction-blue dark:text-dark-text mb-4">Our Projects</h2>
                         <div class="w-24 h-1 bg-construction-yellow mx-auto mb-6" aria-hidden="true"></div>
-                        <p class="text-lg text-gray-700 dark:text-dark-text-secondary">Explore our portfolio of successful construction projects</p>
+                        <p class="text-lg text-gray-600 dark:text-dark-text-secondary">Explore our portfolio of successful construction projects</p>
                     </div>
+                    
+                    <!-- Projects Grid -->
                     <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Projects will be loaded dynamically -->
+                        <!-- Projects will be loaded here dynamically -->
+                        <div class="col-span-full text-center py-8">
+                            <div class="loading-spinner w-12 h-12 border-4 border-construction-blue border-t-transparent rounded-full animate-spin mx-auto"></div>
+                            <p class="mt-4 text-gray-600 dark:text-dark-text-secondary">Loading projects...</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Contact Section -->
-            <section id="contact" class="py-20 bg-white dark:bg-dark-surface">
+            <section id="contact" class="py-20 bg-gray-50 dark:bg-dark-surface">
                 <div class="container mx-auto px-4">
-                    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-dark-text">Contact Us</h2>
-                    <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
-                        <div class="w-24 h-1 bg-construction-yellow mx-auto mb-6" aria-hidden="true"></div>
-                        <p class="text-lg text-gray-700">Get in touch with our team for your construction needs</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-right">
-                            <form id="contactForm" class="space-y-6" role="form" aria-labelledby="contact-form-heading">
-                                <h3 id="contact-form-heading" class="sr-only">Contact Form</h3>
-                                <div data-aos="fade-up" data-aos-delay="100">
-                                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                                    <input type="text" 
-                                           id="name" 
-                                           name="name" 
-                                           required
-                                           class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-construction-blue focus:ring-construction-blue"
-                                           aria-required="true">
-                                </div>
-                                <!-- Repeat for other form fields -->
-                                <button type="submit" 
-                                        class="w-full bg-construction-blue text-white font-bold py-3 px-8 rounded-lg hover:bg-construction-dark transition-all duration-300"
-                                        aria-label="Submit contact form">
-                                    Send Message
-                                </button>
-                            </form>
-                        </div>
-                        <div class="space-y-8" data-aos="fade-left">
-                            <div class="bg-white rounded-lg shadow-lg p-8">
-                                <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-                                <div class="space-y-4">
-                                    <div class="flex items-start">
-                                        <svg class="w-6 h-6 text-construction-blue mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-construction-blue dark:text-dark-text">Get in Touch</h2>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <svg class="w-6 h-6 text-construction-blue dark:text-dark-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                         </svg>
-                                        <div class="ml-3">
-                                            <p class="text-gray-700">123 Construction Ave, Building City, ST 12345</p>
-                                        </div>
                                     </div>
-                                    <!-- Repeat for other contact info -->
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900 dark:text-dark-text">Address</h3>
+                                        <p class="mt-1 text-gray-600 dark:text-dark-text-secondary">MIG - 81, Mushk Mahal, Huda Colony, Attapur, Hyderabad, Telangana 500048</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <svg class="w-6 h-6 text-construction-blue dark:text-dark-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900 dark:text-dark-text">Phone</h3>
+                                        <a href="tel:+919160570643" class="mt-1 text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent transition-colors">+91 91605 70643</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <svg class="w-6 h-6 text-construction-blue dark:text-dark-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900 dark:text-dark-text">Email</h3>
+                                        <a href="mailto:constructiveconstructors@gmail.com" class="mt-1 text-gray-600 dark:text-dark-text-secondary hover:text-construction-blue dark:hover:text-dark-accent transition-colors">constructiveconstructors@gmail.com</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986432970718!3d40.697149422113014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1647043087964!5m2!1sen!2s" 
-                                        width="100%" 
-                                        height="300" 
-                                        style="border:0;" 
-                                        allowfullscreen="" 
-                                        loading="lazy"
-                                        title="Office Location Map"
-                                        aria-label="Interactive map showing our office location"></iframe>
+                            <div class="space-y-8" data-aos="fade-left">
+                                <div class="bg-white rounded-lg shadow-lg p-8">
+                                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex items-start">
+                                            <svg class="w-6 h-6 text-construction-blue mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            </svg>
+                                            <div class="ml-3">
+                                                <p class="text-gray-700">123 Construction Ave, Building City, ST 12345</p>
+                                            </div>
+                                        </div>
+                                        <!-- Repeat for other contact info -->
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986432970718!3d40.697149422113014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1647043087964!5m2!1sen!2s" 
+                                            width="100%" 
+                                            height="300" 
+                                            style="border:0;" 
+                                            allowfullscreen="" 
+                                            loading="lazy"
+                                            title="Office Location Map"
+                                            aria-label="Interactive map showing our office location"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -381,11 +358,11 @@
                         <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
                         <nav aria-label="Footer navigation">
                             <ul class="space-y-2">
-                                <li><a href="#home" class="text-gray-300 hover:text-construction-yellow transition-colors">Home</a></li>
-                                <li><a href="#about" class="text-gray-300 hover:text-construction-yellow transition-colors">About</a></li>
-                                <li><a href="#services" class="text-gray-300 hover:text-construction-yellow transition-colors">Services</a></li>
-                                <li><a href="#projects" class="text-gray-300 hover:text-construction-yellow transition-colors">Projects</a></li>
-                                <li><a href="#contact" class="text-gray-300 hover:text-construction-yellow transition-colors">Contact</a></li>
+                                <li><a href="index.html" class="text-gray-300 hover:text-construction-yellow transition-colors">Home</a></li>
+                                <li><a href="pages/about.html" class="text-gray-300 hover:text-construction-yellow transition-colors">About</a></li>
+                                <li><a href="pages/services.html" class="text-gray-300 hover:text-construction-yellow transition-colors">Services</a></li>
+                                <li><a href="pages/projects.html" class="text-gray-300 hover:text-construction-yellow transition-colors">Projects</a></li>
+                                <li><a href="pages/contact.html" class="text-gray-300 hover:text-construction-yellow transition-colors">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -498,8 +475,7 @@
 
             // Dark mode toggle functionality
             function initDarkMode() {
-                const darkModeToggle = document.getElementById('darkModeToggle');
-                const mobileDarkModeToggle = document.getElementById('mobileDarkModeToggle');
+                const darkModeToggle = document.getElementById('theme-toggle');
                 const html = document.documentElement;
                 const sunIcons = document.querySelectorAll('.sun-icon');
                 const moonIcons = document.querySelectorAll('.moon-icon');
@@ -524,7 +500,6 @@
                 }
 
                 darkModeToggle?.addEventListener('click', toggleDarkMode);
-                mobileDarkModeToggle?.addEventListener('click', toggleDarkMode);
             }
 
             // Initialize dark mode
