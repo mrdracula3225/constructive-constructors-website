@@ -300,23 +300,10 @@
                     <h2 class="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-dark-text">Featured Projects</h2>
                     <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
                         <div class="w-24 h-1 bg-construction-yellow mx-auto mb-6" aria-hidden="true"></div>
-                        <p class="text-lg text-gray-700">Explore our portfolio of successful construction projects</p>
+                        <p class="text-lg text-gray-700 dark:text-dark-text-secondary">Explore our portfolio of successful construction projects</p>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <article class="relative group overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                            <img src="images/project-office-complex.webp" 
-                                 alt="Modern office complex with glass facade and sustainable design features" 
-                                 class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-110"
-                                 loading="lazy"
-                                 width="600"
-                                 height="400">
-                            <div class="absolute inset-0 bg-gradient-to-t from-construction-dark to-transparent opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                <h3 class="text-xl font-semibold mb-2">Modern Office Complex</h3>
-                                <p class="text-sm">Downtown business district</p>
-                            </div>
-                        </article>
-                        <!-- Repeat for other projects -->
+                    <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Projects will be loaded dynamically -->
                     </div>
                 </div>
             </section>
@@ -432,6 +419,7 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize AOS

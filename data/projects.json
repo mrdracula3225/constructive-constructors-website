@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "id": "project1",
+      "title": "Modern Office Complex",
+      "description": "A state-of-the-art office building featuring sustainable design and smart technology integration.",
+      "image": "images/projects/office-complex.webp",
+      "category": "Commercial",
+      "completionDate": "2023",
+      "features": [
+        "LEED Platinum Certification",
+        "Smart Building Systems",
+        "Green Roof Design",
+        "Solar Power Integration"
+      ]
+    },
+    {
+      "id": "project2",
+      "title": "Luxury Residential Estate",
+      "description": "Custom-designed luxury homes with premium finishes and modern amenities.",
+      "image": "images/projects/residential-estate.webp",
+      "category": "Residential",
+      "completionDate": "2023",
+      "features": [
+        "Custom Architecture",
+        "Smart Home Technology",
+        "Landscaped Gardens",
+        "Energy-Efficient Design"
+      ]
+    },
+    {
+      "id": "project3",
+      "title": "Historic Building Renovation",
+      "description": "Restoration of a historic landmark while preserving its architectural integrity.",
+      "image": "images/projects/historic-renovation.webp",
+      "category": "Renovation",
+      "completionDate": "2023",
+      "features": [
+        "Historical Preservation",
+        "Modern Amenities Integration",
+        "Structural Reinforcement",
+        "Period-Appropriate Materials"
+      ]
+    }
+  ]
+} 
